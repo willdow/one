@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>test</title>
+    <meta charset="utf-8">
+
+    <style type="text/css" > 
+      #map { height: 100%}
+      html, body { height: 100%; margin: 0px; padding: 0px;}
+      /* occupation 100% de la hauteur du corps du doc */
+    </style>
+
+  </head>
+  <body>
+  <h2>Pollution de l'air</h2>
+    <p><u>Bonjour, ce programme sert à montrer l'état de pollution de l'air au jour J </p>
+
+<script>
+
+// Création d'une requête HTTP
+var req = new XMLHttpRequest();
+// Requête HTTP GET synchrone vers le fichier langages.txt publié localement
+req.open("GET", "http://localhost/javascript-web-srv/data/langages.txt", false);
+// Envoi de la requête
+req.send(null);
+// Affiche la réponse reçue pour la requête
+console.log(req.responseText);
+
+</script>
+  </body>
+  </html>
+
+
+Je suis entrain de suivre le cours https://openclassrooms.com/courses/creez-des-pages-web-interactives-avec-javascript/interrogez-un-serveur-web
+et https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
